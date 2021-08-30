@@ -7,6 +7,7 @@ export const buildHtml = () =>
 	const htmlPath = 'build/index.html'
 
 	const html = pug.renderFile(pugPath)
-	fs.mkdirSync('build')
+	fs.mkdirSync('build', { recursive: true })
 	fs.writeFileSync(htmlPath, html)
+	console.log(`HTML file saved to '${htmlPath}'.`)
 }

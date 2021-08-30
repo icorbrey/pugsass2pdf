@@ -4,10 +4,10 @@
 	"description": "A project that builds Pug and SASS files into PDF files",
 	"main": " ",
 	"scripts": {
-		"build": "ts-node lib/build.ts all",
-		"build:html": "ts-node lib/build.ts html",
-		"build:css": "ts-node lib/build.ts css",
-		"build:pdf": "ts-node lib/build.ts pdf"
+		"build:html": "ts-node lib/build html",
+		"build:css": "ts-node lib/build css",
+		"build:pdf": "ts-node lib/build pdf",
+		"build": "ts-node lib/build all"
 	},
 	"repository": {
 		"type": "git",

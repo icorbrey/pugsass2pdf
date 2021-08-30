@@ -9,4 +9,5 @@ export const buildCss = () =>
 	const css = sass.renderSync({ file: sassPath }).css.toString()
 	fs.mkdirSync('build', { recursive: true })
 	fs.writeFileSync(cssPath, css)
+	console.log(`CSS file saved to '${cssPath}'.`)
 }
