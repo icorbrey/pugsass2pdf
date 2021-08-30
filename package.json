@@ -1,0 +1,19 @@
+{
+  "name": "pugsass2pdf",
+  "version": "1.0.0",
+  "description": "A project that builds Pug and SASS files into PDF files",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icorbrey/pugsass2pdf.git"
+  },
+  "author": "Isaac Corbrey <icorbrey@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/icorbrey/pugsass2pdf/issues"
+  },
+  "homepage": "https://github.com/icorbrey/pugsass2pdf#readme"
+}
