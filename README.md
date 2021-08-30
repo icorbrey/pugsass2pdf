@@ -34,14 +34,14 @@ section in your `package.json`:
 
 ```json
 {
-	"pugsass2pdf": {
-		"pug": {
-			"main": "src/index.pug",
-			"data": "src/data.json"
-		},
-		"sass": {
-			"main": "src/index.sass"
-		}
-	}
+    "pugsass2pdf": {
+        "pug": {
+            "main": "src/index.pug",
+            "data": "src/data.json"
+        },
+        "sass": {
+            "main": "src/index.sass"
+        }
+    }
 }
 ```
