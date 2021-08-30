@@ -1,4 +1,12 @@
+import sass from 'sass'
+import fs from 'fs'
+
 export const buildCss = () =>
 {
-	console.log('CSS build function not yet created.')
+	const sassPath = 'src/index.sass'
+	const cssPath = 'build/index.css'
+
+	const css = sass.renderSync({ file: sassPath }).css.toString()
+	fs.mkdirSync('build', { recursive: true })
+	fs.writeFileSync(cssPath, css)
 }
