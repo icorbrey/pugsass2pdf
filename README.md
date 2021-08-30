@@ -34,8 +34,6 @@ section in your `package.json`:
 
 ```json
 {
-	// ...
-
 	"pugsass2pdf": {
 		"pug": {
 			"main": "src/index.pug",
@@ -45,7 +43,5 @@ section in your `package.json`:
 			"main": "src/index.sass"
 		}
 	}
-
-	// ...
 }
 ```
