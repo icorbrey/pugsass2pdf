@@ -18,13 +18,6 @@ Run the following in your terminal to build your project:
 $ npm run build
 ```
 
-This is equivalent to the following commands, which you can also run:
-
-```
-$ npm run build:html
-$ npm run build:css
-$ npm run build:pdf
-```
 
 ## Configuration
 
