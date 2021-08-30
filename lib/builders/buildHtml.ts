@@ -1,4 +1,12 @@
+import pug from 'pug'
+import fs from 'fs'
+
 export const buildHtml = () =>
 {
-	console.log('HTML build function not yet created.')
+	const pugPath = 'src/index.pug'
+	const htmlPath = 'build/index.html'
+
+	const html = pug.renderFile(pugPath)
+	fs.mkdirSync('build')
+	fs.writeFileSync(htmlPath, html)
 }
