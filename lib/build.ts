@@ -1,25 +1,23 @@
-import { buildHtml } from './builders/buildHtml'
-import { buildCss } from './builders/buildCss'
-import { buildPdf } from './builders/buildPdf'
-import { getMode } from './args/getMode'
+import { assemblePdf, compilePug, compileSass } from './builders'
+import { getMode } from './config'
 
 switch (getMode())
 {
-	case 'html':
-		buildHtml()
+	case 'css':
+		compileSass()
 		break
 
-	case 'css':
-		buildCss()
+	case 'html':
+		compilePug()
 		break
 
 	case 'pdf':
-		buildPdf()
+		assemblePdf()
 		break
 
 	case 'all':
-		buildHtml()
-		buildCss()
-		buildPdf()
+		compileSass()
+		compilePug()
+		assemblePdf()
 		break
 }

@@ -1,8 +1,4 @@
-type Mode =
-	| 'html'
-	| 'css'
-	| 'pdf'
-	| 'all'
+type Mode = 'html' | 'css' | 'pdf' | 'all'
 
 export const getMode = (): Mode =>
 {
@@ -12,7 +8,7 @@ export const getMode = (): Mode =>
 		throw new Error('Build mode must be provided.')
 
 	if (!isValidMode(mode))
-		throw new Error(`"${mode}" is not a valid build mode.`)
+		throw new Error(`'${mode}' is not a valid build mode.`)
 
 	return mode
 }
